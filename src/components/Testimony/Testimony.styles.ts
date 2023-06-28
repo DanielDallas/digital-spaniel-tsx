@@ -23,8 +23,18 @@ export const CarouselContainer = styled.div`
   max-width: 80%;
   margin: 0 auto;
 
-  @media (max-width: 767px) {
+  @media (max-width: 600px) {
     /* Styles for mobile view */
+    .carousel .slider-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .carousel .slider {
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 `;
 

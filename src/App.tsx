@@ -14,6 +14,8 @@ import theme from "./styles/theme"; // Import the theme object
 const GlobalStyles = createGlobalStyle`
   body {
  font-family: 'Titillium Web', sans-serif;
+   margin: 0;
+  padding: 0;
   }
 
   p{

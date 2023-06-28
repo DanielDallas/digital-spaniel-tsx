@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const CapabilitiesContainer = styled.div`
   padding: 6rem 3rem 5rem 8rem;
-  right: 0;
-  left: 0;
+  right: 0px;
+  left: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
