@@ -7,6 +7,10 @@ interface TestimonyCardProps {
 export const TestimoniesContainer = styled.div`
   padding: 2rem 8rem;
   width: 80%;
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    padding: 2rem 1rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -25,7 +29,7 @@ export const CarouselContainer = styled.div`
 `;
 
 export const TestimonyCard = styled.div<TestimonyCardProps>`
-  background-color: ${(props) => (props.isEven ? "#19293A" : "#E2E4E6")};
+  background-color: ${(props) => (props.isEven ? "#E2E4E6" : "#19293A")};
   margin: 1rem;
   padding: 1rem;
   border-radius: 10px;
@@ -34,9 +38,8 @@ export const TestimonyCard = styled.div<TestimonyCardProps>`
 `;
 
 export const TestimonyContent = styled.p`
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-  font-size: 1rem;
+  margin: 1.3rem 1.4rem;
+  font-size: 0.94rem;
   line-height: 1.6rem;
   color: #4b5563;
   font-weight: 100;
@@ -59,7 +62,8 @@ export const TestimonyTitle = styled.p`
 `;
 
 export const TestimonyImage = styled.img`
+  padding: 0rem 5.8rem;
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  border-radius: 30%;
 `;

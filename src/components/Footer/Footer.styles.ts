@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const FooterMain = styled.div`
   padding: 6rem 3rem 0.1rem 8rem;
   background-color: #f2f2f2;
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    padding: 3rem 1rem 0.5rem 1rem;
+  }
 `;
 
 export const FooterContainer = styled.footer`
@@ -11,6 +15,10 @@ export const FooterContainer = styled.footer`
   display: flex;
   justify-content: start;
   align-items: start;
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    display: inherit;
+  }
 `;
 
 export const FooterContent = styled.div`
@@ -31,6 +39,12 @@ export const FooterContentLinks = styled.div`
 export const FooterLinkDiv = styled.div`
   @media (min-width: 800px) {
     flex-basis: 20%;
+  }
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    flex-basis: 20%;
+    margin-top: 3rem;
+    gap: 3rem;
   }
 `;
 
@@ -104,6 +118,10 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   margin-bottom: 8px;
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    margin-bottom: 2px;
+  }
 `;
 
 export const SocialMediaContainer = styled.div`
@@ -111,6 +129,11 @@ export const SocialMediaContainer = styled.div`
   align-items: center;
   justify-content: start;
   padding: 5rem 0 1rem 0;
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    display: inherit;
+    align-items: start;
+  }
 `;
 
 export const SocialMediaIcon = styled.a`
@@ -125,9 +148,19 @@ export const SocialMediaIcon = styled.a`
 
 export const SocialIcons = styled.span`
   margin-left: 30rem;
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    margin-left: 0rem;
+    width: 100%;
+  }
 `;
 
 export const CopyRightContainer = styled.div`
   @media (min-width: 800px) {
+  }
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    margin-bottom: 1rem;
+    width: 100%;
   }
 `;

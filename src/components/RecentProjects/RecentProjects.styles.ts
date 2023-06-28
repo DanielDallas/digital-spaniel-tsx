@@ -3,16 +3,27 @@ import styled, { css } from "styled-components/macro";
 export const RecentProjectsContainer = styled.div`
   padding: 2rem 8rem;
   width: 70%;
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    padding: 1rem;
+    width: 65%;
+  }
 `;
 
 export const Title = styled.h1`
   font-size: 2.4rem;
   font-weight: 500;
   color: #111827;
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    font-size: 1.9rem;
+  }
 `;
 
 export const Tabs = styled.div`
-  /* Styles for the Tabs component */
+  @media (min-width: 300px) and (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const TabsHeader = styled.div`
@@ -23,6 +34,11 @@ export const TabsHeader = styled.div`
   gap: 2rem;
   border-bottom-color: #cccfd0;
   margin-bottom: 1rem;
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    width: 100%;
+    gap: 1rem;
+  }
 `;
 
 export const Tab = styled.button<{ active: boolean }>`
@@ -44,6 +60,11 @@ export const Tab = styled.button<{ active: boolean }>`
   &:hover {
     color: #1f2937;
   }
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
 `;
 
 export const TabsBody = styled.div`
@@ -55,8 +76,9 @@ export const TabPanelContainer = styled.div`
   grid-template-columns: 1fr;
   gap: 1rem;
 
-  @media (min-width: 640px) {
+  @media (min-width: 300px) and (max-width: 600px) {
     grid-template-columns: repeat(2, 1fr);
+    width: 100%;
   }
 
   @media (min-width: 768px) {

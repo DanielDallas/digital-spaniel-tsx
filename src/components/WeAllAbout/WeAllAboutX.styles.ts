@@ -13,6 +13,10 @@ export const TitleContainer = styled.div`
     flex-basis: 50%;
     padding: 3rem 8rem 1rem 8rem;
   }
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    padding: 3rem 1rem 0.5rem 1rem;
+  }
 `;
 
 export const Title = styled.h1`
@@ -38,6 +42,10 @@ export const ContentContainer = styled.div`
   @media (min-width: 1024px) {
     padding: 2rem 8rem;
   }
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    padding: 1rem;
+  }
 `;
 
 export const Image = styled.img`
@@ -46,9 +54,8 @@ export const Image = styled.img`
   padding-top: 40px;
   padding-bottom: 40px;
 
-  @media (min-width: 640px) {
-    padding-top: 10px;
-    padding-bottom: 40px;
+  @media (min-width: 300px) and (max-width: 600px) {
+    padding: 10px 5px;
   }
 
   @media (min-width: 1024px) {

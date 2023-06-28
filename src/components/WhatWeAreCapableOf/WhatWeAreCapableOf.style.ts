@@ -9,6 +9,11 @@ export const CapabilitiesContainer = styled.div`
   align-items: center;
   height: 100vh;
   background-color: #f2f2f2;
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    padding: 0.5rem;
+    display: inherit;
+  }
 `;
 
 export const CapabilitiesContent = styled.div`
@@ -16,6 +21,13 @@ export const CapabilitiesContent = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
 `;
 
 export const CapableOf = styled.div`
