@@ -47,9 +47,9 @@ export const Description = styled.p`
   margin-bottom: 2rem;
   font-size: 1rem;
   line-height: 1.6rem;
-  color: #4b5563;
+  color: #000000;
   font-weight: 100;
-  opacity: 1;
+  opacity: 0.8;
   max-width: 24rem;
 
   @media (min-width: 800px) {
@@ -81,7 +81,7 @@ export const HeroImage = styled.img`
   width: 50%;
   height: auto;
   position: absolute;
-  right: -0.5rem;
+  right: -0.06rem;
   top: -1rem;
   border-radius: 0px 0px 0px 85px;
   //   z-index: 1;

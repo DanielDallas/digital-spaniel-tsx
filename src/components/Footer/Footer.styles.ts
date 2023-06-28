@@ -43,7 +43,7 @@ export const FooterLinkDiv = styled.div`
 
   @media (min-width: 300px) and (max-width: 600px) {
     flex-basis: 20%;
-    margin: 3rem 0.57rem;
+    margin: 3rem 0.5rem 3rem 0.2rem;
   }
 `;
 

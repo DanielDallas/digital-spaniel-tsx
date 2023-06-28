@@ -60,9 +60,9 @@ export const SectionText = styled.p`
   margin-bottom: 2rem;
   font-size: 1rem;
   line-height: 1.6rem;
-  color: #4b5563;
   font-weight: 100;
-  opacity: 1;
+  color: #000000;
+  opacity: 0.8;
   max-width: 24rem;
 
   @media (min-width: 800px) {
