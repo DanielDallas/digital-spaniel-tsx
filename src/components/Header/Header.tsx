@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useCallback } from "react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { XMarkIcon } from "@heroicons/react/24/outline";
+import { FaBarsStaggered } from "react-icons/fa6";
 import logo from "./images/logo.png";
 import {
   HeaderContainer,
@@ -56,7 +57,6 @@ export default function Header(): JSX.Element {
         <Navigation aria-label="Global">
           <div>
             <LogoLink href="/">
-              {/* <span className="sr-only">Digital Spaniel</span> */}
               <img className="logoimage" src={logo} alt="" />
             </LogoLink>
           </div>
@@ -65,8 +65,8 @@ export default function Header(): JSX.Element {
               type="button"
               onClick={() => setMobileMenuOpen(true)}
             >
-              {/* <span className="sr-only">Mobile Menu</span> */}
-              <Bars3Icon className="hamburgericon" aria-hidden="true" />
+              <span className="sr-only">Mobile Menu</span>
+              <FaBarsStaggered />
             </MobileMenuButton>
           </div>
           <NavigationLinks>
@@ -77,12 +77,14 @@ export default function Header(): JSX.Element {
             ))}
           </NavigationLinks>
         </Navigation>
-        <MobileMenuContainer open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        <MobileMenuContainer
+          open={mobileMenuOpen}
+          onClose={() => setMobileMenuOpen(false)}
+        >
           <div className="fixed inset-0 z-50" />
           <MobileMenuPanel>
             <div>
               <MobileMenuLogoLink href="/">
-                {/* <span className="sr-only">Digital Spaniel</span> */}
                 <img className="mobilelogo" src={logo} alt="" />
               </MobileMenuLogoLink>
               <MobileMenuCloseButton
@@ -90,16 +92,12 @@ export default function Header(): JSX.Element {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                <XMarkIcon aria-hidden="true" />
               </MobileMenuCloseButton>
             </div>
             <MobileMenuLinks>
               {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                >
+                <a key={item.name} href={item.href}>
                   {item.name}
                 </a>
               ))}

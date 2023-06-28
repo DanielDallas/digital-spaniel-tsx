@@ -65,16 +65,9 @@ export const NavigationLinks = styled.div`
   }
 `;
 
-export const MobileMenuButton = styled.button`
-  margin: -0.625rem;
-  border-radius: 0.375rem;
-  padding: 0.625rem;
+export const MobileMenuButton = styled.a`
+  font-size: 1.7rem;
   color: #000000;
-
-  &.hamburgericon {
-    // width: 1rem;
-    // height: 1rem;
-  }
 
   @media (min-width: 800px) {
     display: none;
@@ -83,8 +76,8 @@ export const MobileMenuButton = styled.button`
 
 export const MobileMenuContainer = styled(Dialog)`
   .fixed {
-    inset: 0;
-    z-index: 50;
+    inset-y: 0;
+    z-index: 100;
   }
 `;
 
@@ -92,7 +85,7 @@ export const MobileMenuPanel = styled(Dialog.Panel)`
   .fixed {
     inset-y: 0;
     right: 0;
-    z-index: 50;
+    z-index: 100;
     width: 100%;
     overflow-y: auto;
     background-color: white;
@@ -130,7 +123,7 @@ export const MobileMenuLinks = styled.div`
     color: var(--text-gray-900);
     background-color: var(--gray-50);
     &:hover {
-      background-color: var(--gray-200);
+      background-color: #f3f4f6;
     }
   }
 `;

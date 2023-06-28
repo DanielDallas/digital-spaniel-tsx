@@ -11,7 +11,7 @@ export const CapabilitiesContainer = styled.div`
   background-color: #f2f2f2;
 
   @media (min-width: 300px) and (max-width: 600px) {
-    padding: 0.5rem;
+    padding: 3rem 0.5rem;
     display: inherit;
   }
 `;
@@ -32,12 +32,19 @@ export const CapabilitiesContent = styled.div`
 
 export const CapableOf = styled.div`
   @media (min-width: 800px) {
-    padding:;
-    right:0px;
+    right: 0px;
     display: flex;
     gap: 3rem;
     width: 50%;
+  }
 
+  @media (max-width: 600px) {
+    margin-top: 1.3rem;
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    padding-bottom: 3rem;
+  }
 `;
 
 export const SectionTitle = styled.h1`
@@ -61,8 +68,6 @@ export const SectionText = styled.p`
   font-size: 1rem;
   line-height: 1.6rem;
   font-weight: 100;
-  color: #000000;
-  opacity: 0.8;
   max-width: 24rem;
 
   @media (min-width: 800px) {
@@ -83,6 +88,10 @@ export const ButtonLinks = styled.a`
 
   &:hover {
     text-decoration-style: dotted;
+  }
+
+  @media (min-width: 300px) and (max-width: 600px) {
+    margin-bottom: 3rem;
   }
 `;
 

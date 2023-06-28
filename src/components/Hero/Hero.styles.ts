@@ -47,9 +47,7 @@ export const Description = styled.p`
   margin-bottom: 2rem;
   font-size: 1rem;
   line-height: 1.6rem;
-  color: #000000;
-  font-weight: 100;
-  opacity: 0.8;
+  font-weight: 300;
   max-width: 24rem;
 
   @media (min-width: 800px) {
