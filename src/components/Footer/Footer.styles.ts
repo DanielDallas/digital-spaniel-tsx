@@ -43,8 +43,7 @@ export const FooterLinkDiv = styled.div`
 
   @media (min-width: 300px) and (max-width: 600px) {
     flex-basis: 20%;
-    margin-top: 3rem;
-    gap: 3rem;
+    margin: 3rem 0.57rem;
   }
 `;
 
@@ -132,7 +131,7 @@ export const SocialMediaContainer = styled.div`
 
   @media (min-width: 300px) and (max-width: 600px) {
     display: inherit;
-    align-items: start;
+    padding: 1rem 0 1rem 0;
   }
 `;
 
@@ -161,6 +160,7 @@ export const CopyRightContainer = styled.div`
 
   @media (min-width: 300px) and (max-width: 600px) {
     margin-bottom: 1rem;
+    margin-top: -2rem;
     width: 100%;
   }
 `;
